@@ -1,0 +1,31 @@
+body {
+  background-color:white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+button {
+  background-color: #ff3399;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+.panel-default {
+float: left;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+
+  
+  
