@@ -33,15 +33,10 @@ This is app contains the following files:
         - css
           - burger_style.css
         -img
-        - js
-          - burger.js
     - views
       - layouts
         - main.handlebars
-      - partials
-        - index.handlebars
-        - burgers
-          - burger-block.handlebars
+      - index.handlebars
     - node_modules
     - package.json
     - server.js
