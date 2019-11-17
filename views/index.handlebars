@@ -1,4 +1,8 @@
-<h1>Classic Burgers</h1>
+<h1>Classic Burger</h1><h1 id = "sequel-color">2</h1>
+<br>
+<br>
+<br>
+<br>
 <p class="lead">World Famous Burgers Made From Grass Fed Cows and Farm to Table Ingredients.</p>
 <hr class="my-4">
 
@@ -13,8 +17,16 @@
         <ol>
           {{#each burgers}}
           {{#unless devoured}}
-
-          {{> burgers/burger-block devoured=true}}
+          <li>
+            {{this.burger_name}}
+            {{!-- {{> burgers/burger-block devoured=true}} --}}
+            <form class="inline-form" action="/?_method=PUT" method="POST">
+            <input type="hidden" id="burger-id" name="id" value="{{this.id}}"/>
+              <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+                {{#unless devoured}}DEVOUR!{{/unless}}
+                </button>
+            </form>
+          </li>
           {{/unless}}
           {{/each}}
         </ol>
@@ -62,11 +74,12 @@
 <br>
 
 <h2>Make Your Burger</h2>
-<form class="create-form">
 
+
+<form class="form" method="POST" action="/">
   <div class="form-group">
     <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+    <input type="text" id="ca" name="burger_name">
   </div>
 
   <button type="submit">Place an Order</button>
