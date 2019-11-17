@@ -4,7 +4,7 @@
 
 ## Description
 
-Classic Burgers is a logger that takes in orders from the user and shows an ordered list of orders to be completed. Burgers from the list can be devoured and moved to a seperate list using Object-Relational Mapping (ORM).
+Classic Burgers is a logger that takes in orders from the user and shows an ordered list of orders to be completed. Burgers from the list can be devoured and moved to a seperate list using Sequelize queries.
 
 
 
@@ -20,7 +20,6 @@ This is app contains the following files:
     - config
       - connection.js
       - db-config.js
-      - orm.js
     - controllers
       - burgers_controller.js
     - db
@@ -28,6 +27,7 @@ This is app contains the following files:
       - seeds.sql
     - models
       - burger.js
+      - index.js
     - public
       - assets
         - css
@@ -75,7 +75,7 @@ This moves the selected burger to the right column on the screen designated for 
 
    * [Handlebars](https://handlebarsjs.com/)
 
-   * [MySQL](https://www.mysql.com/)
+   * [Sequelize](https://www.npmjs.com/package/sequelize)
 
 
 
@@ -86,4 +86,4 @@ This moves the selected burger to the right column on the screen designated for 
 My name is Alex I am a bootcamp student whose portfolio can be found
 [here]( https://alexsamalot19.github.io/Samalot-Alexander-Portfolio/).
 
-I designed this app using existing APIs and packages listed in the **This App Utilizes** section. I used Node and MySQL to query and route data in this app, and Handlebars to generate your HTML. The site is deployed to Heroku [here](https://burger9.herokuapp.com/).
+I designed this app using existing APIs and packages listed in the **This App Utilizes** section. I used Node and Sequelize to query and route data in this app, and Handlebars to generate your HTML. The site is deployed to Heroku [here](https://sequelizedburgers9.herokuapp.com/).
